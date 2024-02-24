@@ -1,0 +1,59 @@
+ins:
+  is_online: true
+  visualization: true
+  method: 0   # 0: ISAM2, 1: Levenberg
+  imu:
+    acc_noise: 0.0004
+    gyro_noise: 0.0001
+    # bias_noise: 1000000
+    bias_noise: 1000000
+    min_cnt_for_integration: 3
+  robust_huber_param: 0.8
+  
+csv_format:
+  gnss:
+    has_header: true
+    # stamp_index: 1
+    # x_index: 9
+    # y_index: 10
+    # z_index: 11
+    # status_index: 24
+
+    stamp_index: 0
+    x_index: 1
+    y_index: 2
+    z_index: 3
+    status_index: 4
+  imu:
+    has_header: true
+    stamp_index: 41
+    acc_x_index: 29
+    acc_y_index: 30
+    acc_z_index: 31
+    gyro_x_index: 17
+    gyro_y_index: 18
+    gyro_z_index: 19
+  velocity:
+    has_header: true
+    stamp_index: 10
+    velocity_index: 4
+  gnss_doppler:
+    has_header: true
+    stamp_index: 0
+    gnss_vel_x_index: 1
+    gnss_vel_y_index: 2
+    gnss_vel_z_index: 3
+    status_est_index: 4
+    status_index: 5
+  # gnss_doppler:
+  #   has_header: true
+  #   stamp_index: 0
+  #   gnss_vel_x_index: 8
+  #   gnss_vel_y_index: 9
+  #   gnss_vel_z_index: 10
+    # quaternion_w_index: 4
+    # quaternion_x_index: 5
+    # quaternion_y_index: 6
+    # quaternion_z_index: 7
+    
+    

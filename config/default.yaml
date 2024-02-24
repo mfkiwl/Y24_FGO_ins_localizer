@@ -1,0 +1,25 @@
+ins:
+  is_online: false
+  method: 1   # 0: ISAM2, 1: Levenberg
+  imu:
+    acc_noise: 0.004
+    gyro_noise: 0.001
+    bias_noise: 1e6
+    min_cnt_for_integration: 3
+  robust_huber_param: 1.3
+  
+csv_format:
+  gnss:
+    stamp_index: 0
+    x_index: 1
+    y_index: 2
+    z_index: 3
+    status_index: 4
+  imu:
+    stamp_index: 0
+    acc_x_index: 1
+    acc_y_index: 2
+    acc_z_index: 3
+    gyro_x_index: 4
+    gyro_y_index: 5
+    gyro_z_index: 6
